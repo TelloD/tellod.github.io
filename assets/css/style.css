@@ -366,7 +366,7 @@ text-shadow: 0px 6px black;
 }
 
 #portfolio{
-    padding-bottom: 200px;
+    padding-bottom: 40vh;
     background-color: white;
     background: url(../images/fondo-portfolio.png) no-repeat center center;
     background-size: cover;
