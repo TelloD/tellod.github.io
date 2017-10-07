@@ -200,7 +200,7 @@ box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
 	font-size: 8em;
 	margin-bottom: 15px;
 	line-height: 1em;
-	font-family: 'upheaval';
+	font-family: 'upheaval', sans-serif;
 	color: white;
 text-shadow: 0px 6px black;
    -webkit-text-shadow: 0px 6px black;
@@ -411,6 +411,7 @@ text-shadow: 0px 6px black;
 .service {
     padding: 0 25px;
 }
+
 
 
 
@@ -736,9 +737,10 @@ box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.24);
 
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
 	color: #0d0d0d;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 18px;
 	padding: 5px 0;
 	border: 2px solid transparent;
 	letter-spacing: 0.5px;
@@ -798,4 +800,86 @@ box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.24);
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
 	background-color: #628d0f;
+}
+
+
+/*////////////////////////////////////////////////////////////*/
+
+/* Stats */
+.stats-container {
+  width: 80%;
+  max-width: 560px;
+  margin: 30px auto;
+}
+
+.stat-item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 33.33%;
+  padding: 2%;
+}
+
+.stat-item img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.stat-path,
+.stat-back {
+  stroke-linecap: round;
+  stroke-width: 7;
+  fill: none;
+}
+
+@media only screen and (max-width: 580px) {
+  .stat-item {
+    width: 50%;
+  }
+}
+
+/* Tooltip */
+.tooltip .tooltiptext {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  background: #dddddd;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-align: center;
+  white-space: nowrap;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext span {
+  display: block;
+  color: #ffffff;
+}
+
+.tooltip .tooltiptext:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent currentColor transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
