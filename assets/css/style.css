@@ -286,16 +286,13 @@ text-shadow: 0px 6px black;
 	overflow:hidden;
 	padding: 60px 0;
 }
-.parallax{
-	padding: 80px 0;
-}
+
 
 .block-body {
 	margin-top: 60px;
 }
 
 #services {
-    background-color: #303030;
 	color: white;
 }
 #parallax {
@@ -401,6 +398,12 @@ text-shadow: 0px 6px black;
 //  06 - Services
 ///////////////////////////////////////////////////////////////////////*/
 
+#services{
+    padding-top: 0px;
+}
+#services h1{
+    padding-bottom: 20px;
+}
 
 #services h1, #services h2{
 	color: white;
@@ -412,6 +415,62 @@ text-shadow: 0px 6px black;
     padding: 0 25px;
 }
 
+#background{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #1a1a1a;
+}
+
+.pixel{
+  width: 2vw;
+  height: 2vw;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.twinkle{
+  -webkit-animation: twinkle 5s linear 1;
+          animation: twinkle 5s linear 1;
+}
+
+@-webkit-keyframes twinkle{
+  0%{ -webkit-filter: brightness(1); filter: brightness(1); }
+  25%{ -webkit-filter: brightness(0.5); filter: brightness(0.5); }
+  50%{ -webkit-filter: brightness(1); filter: brightness(1); }
+  75%{ -webkit-filter: brightness(2); filter: brightness(2); }
+  100%{ -webkit-filter: brightness(1); filter: brightness(1); }
+}
+
+@keyframes twinkle{
+  0%{ -webkit-filter: brightness(1); filter: brightness(1); }
+  25%{ -webkit-filter: brightness(0.5); filter: brightness(0.5); }
+  50%{ -webkit-filter: brightness(1); filter: brightness(1); }
+  75%{ -webkit-filter: brightness(2); filter: brightness(2); }
+  100%{ -webkit-filter: brightness(1); filter: brightness(1); }
+}
+
+@media (orientation: portrait){
+  #container{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pixel{
+    width: 2vh;
+  height: 2vh;
+  }
+}
 
 
 
@@ -446,6 +505,9 @@ text-shadow: 0px 6px black;
 	padding: 25px;
 }
 
+#testimonials h1,p {
+    color: white;
+}
 
 /*////////////////////////////////////////////////////////////////////////
 //  09 - Contact
