@@ -20,14 +20,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 		
 		<!-- google fonts -->
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans'>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold"/>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+Sans:regular,italic,bold,bolditalic"/>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nixie+One:regular,italic,bold,bolditalic"/>
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya+SC:regular,italic,bold,bolditalic"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial" >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" >
+
 		<!-- css -->
 
 	     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -53,11 +50,25 @@ $(document).ready(function(){
  console.log("funciona");
   // hide our element on page load
   $('.service').css('opacity', 0);
+    $('.image').css('opacity', 0);
+    $('.text').css('opacity', 0);
  
   $('.service').waypoint(function() {
-      console.log("entró a la función");
+ 
       $('.service').addClass('fadeInUp');
+       
+  }, { offset: '50%' });
+    
+      $('.image').waypoint(function() {
+      console.log("entró a la función");
+      $('.image').addClass('fadeInLeft');
        console.log("genera la rotación");
+  }, { offset: '50%' });
+    
+      $('.text').waypoint(function() {
+    
+      $('.text').addClass('fadeInRight');
+     
   }, { offset: '50%' });
  
 });
@@ -78,8 +89,8 @@ $(document).ready(function(){
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-        <li><a href="#services" class="page-scroll">Skills</a></li>
         <li><a href="#testimonials" class="page-scroll">About</a></li>
+        <li><a href="#services" class="page-scroll">Skills</a></li>
         <li><a href="#contact" class="page-scroll">Contact</a></li>
       </ul>
     </div>
@@ -247,12 +258,33 @@ $(document).ready(function(){
 				</div>
 			</div><!-- #portfolio -->
             
+            <div class="content-block" id="testimonials">
+				<div class="container">
+					<header class="block-heading cleafix">
+						<h1>About me</h1>
+					</header>
+					<section class="block-body">
+						<div class="row">
 
+                            <div class="col-lg-2 col-lg-offset-3">
+								<div class="testimonial image animated">
+									<img src="assets/images/favicon-icon.png" style="width: 200px">
+									
+								</div>
+							</div>
+                             <div class="col-lg-4 col-lg-offset-1">
+								<div class="testimonial text animated">
+									
+									<p>My name is Andres Felipe Tello and i'm from Cali, Colombia. I'm in last year in Interactive Media Design at ICESI University. Since my youth, I loved all about the field of entertainment and technology, like animation, storytelling or videogames. Now, i'm collecting knowledge to create stuffs that I always wanted to become a great designer.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div><!-- /#testimonials -->
 
-			<div class="content-block parallax" id="services">
-                      
-				<div class="container text-center">
-                    
+			<div class="content-block parallax" id="services">                 
+				<div class="container text-center">                   
 					<header class="block-heading cleafix">
                   
 						<h1>My skills</h1>
@@ -262,19 +294,19 @@ $(document).ready(function(){
 							<div class="col-md-4">
 								<div class="service animated">
 									<i class="fa fa-send-o"></i>
-									<h2>Illustration</h2>
+									<h2>3D-model</h2>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="service animated">
 									<i class="fa fa-send-o"></i>
-									<h2>Illustration</h2>
+									<h2>Animation</h2>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="service animated">
 									<i class="fa fa-send-o"></i>
-									<h2>Illustration</h2>
+									<h2>Storytelling</h2>
 								</div>
 							</div>
 						</div>
@@ -283,23 +315,7 @@ $(document).ready(function(){
 			</div><!-- #services -->
             
             
-            <div class="content-block" id="testimonials">
-				<div class="container">
-					<header class="block-heading cleafix">
-						<h1>About me</h1>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-lg-6 col-lg-offset-3">
-								<div class="testimonial">
-									<img src="assets/images/favicon-icon.png" style="width: 200px">
-									<p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet, hendrerit in lorem.</p>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div><!-- /#testimonials -->
+
 
 
 			<div class="content-block" id="contact">
@@ -318,7 +334,7 @@ $(document).ready(function(){
 								    	<input type="email" class="form-control form-control-white" id="exampleInputEmail2" placeholder="Enter email" required name="_replyto">
 								    </div>
 								    <div class="form-group">
-								    	<textarea name="message" class="form-control form-control-white" placeholder="Write Something" required></textarea>
+								    	<textarea type="text" name="message" class="form-control form-control-white" placeholder="Write Something" required></textarea>
 								    </div>
 								  <input type="submit" class="btn btn-o-white" value="Send">
 								</form>  
