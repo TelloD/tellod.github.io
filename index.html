@@ -32,6 +32,7 @@
 
 	     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
 		<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,8 +44,24 @@
 		<!--[if IE 8]>
 	    	<script src="assets/js/selectivizr.js"></script>
 	    <![endif]-->
+     <script src="assets/js/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
         
-  
+  <script type="text/javascript">
+console.log("funciona");
+$(document).ready(function(){
+ console.log("funciona");
+  // hide our element on page load
+  $('.service').css('opacity', 0);
+ 
+  $('.service').waypoint(function() {
+      console.log("entró a la función");
+      $('.service').addClass('fadeInUp');
+       console.log("genera la rotación");
+  }, { offset: '50%' });
+ 
+});
+        </script>
         
 	</head>
 	
@@ -69,58 +86,11 @@
     <!-- /.navbar-collapse --> 
   </div>
 </nav>
-	<!-- 	<div id="drawer-right">
-			<div class="cross text-right">
-				<a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
-			</div>
-			<nav>
-				<ul class="nav nav-pills nav-stacked">
-					<li>
-						<a href="#wrapper"> Home</a>
-					</li>
-					<li>
-						<a href="#portfolio">Portfolio</a>
-					</li>
-					<li>
-						<a href="#services">Skills</a>
-					</li>
-                    <li>
-						<a href="#testimonials">About me</a>
-					</li>
-					<li>
-						<a href="#contact"> Contact me</a>
-					</li>
-				</ul>
-			</nav>
-
-		</div>#drawer-right -->
-
-        
-        
-        
-        
-        
+          
 		<div id="wrapper">
 			
 			<div id="header" class="content-block header-wrapper">
-				<div class="header-wrapper-inner">
-				<!--	<section class="top clearfix">
-						<div class="pull-left">
-							<a class="logo" href="index.html"> <img src="assets/images/tello-logo.png"></a>
-                            
-
-                            
-                            
-						</div>
-						<div class="pull-right">
-							<a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x" style="color: black; margin-top: 5px;"></i></a>
-                    
-						</div>
-					</section>  -->
-                    
-                    
-                    
-                    
+				<div class="header-wrapper-inner">               
 					<section class="center">
 						<div class="slogan">
 							HELLO THERE!
@@ -290,19 +260,19 @@
 					<section class="block-body">
 						<div class="row">
 							<div class="col-md-4">
-								<div class="service">
+								<div class="service animated">
 									<i class="fa fa-send-o"></i>
 									<h2>Illustration</h2>
 								</div>
 							</div>
 							<div class="col-md-4">
-								<div class="service">
+								<div class="service animated">
 									<i class="fa fa-send-o"></i>
 									<h2>Illustration</h2>
 								</div>
 							</div>
 							<div class="col-md-4">
-								<div class="service">
+								<div class="service animated">
 									<i class="fa fa-send-o"></i>
 									<h2>Illustration</h2>
 								</div>
@@ -367,16 +337,13 @@
 					</div>
 				</div>
 			</div><!-- #footer -->
-
-<div id="background"></div>
 		</div><!--/#wrapper-->
 
 
 
          
-		<script src="assets/js/jquery-2.1.3.min.js"></script>
+		
 		<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="assets/js/jquery.actual.min.js"></script>
 		<script src="assets/js/jquery.scrollTo.min.js"></script>
 		<script src="assets/js/script.js"></script>
@@ -385,13 +352,12 @@
         
         
         <!--MENÚ PRINCIPAL -->
-        <script type="text/javascript" src="assets/barrajs/jquery.1.11.1.js"></script> 
+        
         <script type="text/javascript" src="assets/barrajs/bootstrap.js"></script> 
         <script type="text/javascript" src="assets/barrajs/SmoothScroll.js"></script> 
         <script type="text/javascript" src="assets/barrajs/main.js"></script>
         
      <!-- fondo pixelado -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script  src="assets/pixelado-js/index.js"></script>
+    
 	</body>
 </html>
