@@ -544,6 +544,13 @@ padding-top:10px;
 //  11 - Responsive styles
 ///////////////////////////////////////////////////////////////////////*/
 
+@media (max-width: 1024px){
+    .cont{
+         height: 40vh;
+    } 
+
+}
+
 
 @media (max-width: 767px){
 	#header .slogan {
@@ -573,6 +580,7 @@ padding-top:10px;
 	.recent-work span {
 		opacity: 1;
 	}
+    
 }
 
 @media (max-width: 480px) {
@@ -925,3 +933,82 @@ box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.24);
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+/*video fondo */
+
+.cont {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    height: 100vh;
+}
+
+#kont video {
+  top: 0; 
+  left: 0;
+}
+
+div#kont div#ent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0,0,0,0.4)
+}
+
+div#ent div#diagonal {
+  width: 300%;
+  height: 300%;
+  position: absolute;
+  left: -1500px;
+  top: -1000px
+}
+
+div#diagonal div {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  height: 6px;
+  -webkit-transform: rotate(-45deg)
+}
+
+div#ent div#content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 50px 100px
+}
+
+div#content h1 {
+  font-size: 64px;
+  font-weight: 100;
+  line-height: 108px;
+  padding-top: 100px
+}
+
+div#content h2 {
+  text-transform: capitalize;
+  font-weight: 100
+}
+
+div#content p {
+  padding-right: 40px;
+  margin-right: 40px;
+  width: 360px;
+  height: 180px;
+  float: left;
+  border-right: 1px solid rgba(0,0,0,0.2)
+}
+
+div#content p:last-child {
+  border: none
+}
+
+
+
