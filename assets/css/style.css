@@ -544,13 +544,6 @@ padding-top:10px;
 //  11 - Responsive styles
 ///////////////////////////////////////////////////////////////////////*/
 
-@media (max-width: 1024px){
-    .cont{
-         height: 40vh;
-    } 
-
-}
-
 
 @media (max-width: 767px){
 	#header .slogan {
@@ -580,6 +573,10 @@ padding-top:10px;
 	.recent-work span {
 		opacity: 1;
 	}
+    
+     .cont{
+         margin-left:0;
+    } 
     
 }
 
@@ -947,8 +944,12 @@ box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.24);
 }
 
 #kont video {
-  top: 0; 
-  left: 0;
+position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: -1000;
+    overflow: hidden;
 }
 
 div#kont div#ent {
