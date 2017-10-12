@@ -544,8 +544,16 @@ padding-top:10px;
 //  11 - Responsive styles
 ///////////////////////////////////////////////////////////////////////*/
 
+@media (width: 1367px){
+    .cont{
+        margin-top: -200px;
+    } 
+    #kont video{
+        top: 140px;
+    }
+}
 
-@media (max-width: 768px){
+@media (max-width: 769px){
 	#header .slogan {
 		font-size: 2.8em; 
 	} 
@@ -583,15 +591,15 @@ padding-top:10px;
     
 }
 
-@media (max-width: 924px){
+/*@media (max-width: 924px){
      .cont{
-         margin-top: -125px;
+       margin-top: -500px;
     } 
     #kont video{
         top: 100px;
     }
     
-}
+}*/
 
 @media (max-width: 480px) {
 	#drawer-right {
