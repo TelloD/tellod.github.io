@@ -45,9 +45,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
         
   <script type="text/javascript">
-console.log("funciona");
+
 $(document).ready(function(){
- console.log("funciona");
+
   // hide our element on page load
   $('.service').css('opacity', 0);
     $('.image').css('opacity', 0);
@@ -60,9 +60,9 @@ $(document).ready(function(){
   }, { offset: '50%' });
     
       $('.image').waypoint(function() {
-      console.log("entró a la función");
+ 
       $('.image').addClass('fadeInLeft');
-       console.log("genera la rotación");
+   
   }, { offset: '50%' });
     
       $('.text').waypoint(function() {
@@ -71,6 +71,17 @@ $(document).ready(function(){
      
   }, { offset: '50%' });
  
+    
+    
+    if ($(window).width() <= 768){
+          console.log("cambia el link a responsive");
+  $("a[href*='#kont']").attr("href", "#header");
+}else{
+      console.log("se activa el else!!!!!");
+   $("a[href*='#header']").attr("href", "#kont"); 
+}
+    
+    
 });
         </script>
         
@@ -83,7 +94,7 @@ $(document).ready(function(){
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="page-scroll" href="#kont"> <img src="assets/images/tello-logo.svg" style="height: 65px;"></a> </div>
+      <a class="page-scroll link_header" href="#kont" href="#kont"> <img src="assets/images/tello-logo.svg" style="height: 65px;"></a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -109,11 +120,14 @@ $(document).ready(function(){
 
 </div>
             
-		<!--	<div id="header" class="content-block header-wrapper">
+			<div id="header" class="content-block header-wrapper">
 				<div class="header-wrapper-inner">               
 					<section class="center">
 						<div class="slogan">
-							HELLO THERE!
+							WELCOME TO MY
+						</div>
+                        <div id="texto_portfolio">
+							PORTFOLIO
 						</div>
 					</section>
 					<section class="bottom">
@@ -127,7 +141,7 @@ $(document).ready(function(){
 						
 					</section>
 				</div>
-			</div> header -->
+			</div><!-- header -->
 
 			
 			<div class="content-block" id="portfolio">
