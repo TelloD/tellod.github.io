@@ -131,29 +131,26 @@ h1, h2, h3, h4, h5, h6{
 //  02 - Header
 ///////////////////////////////////////////////////////////////////////*/
 
-#header {	
-	position: relative;
-	padding: 0 !important;
-}
+
 
 #header.header-wrapper {
-	background: url(../images/fondo-ciudad.png) no-repeat center center;
+	background: url(../images/fondo-responsive.png) no-repeat center center;
 	background-size: cover;
-	display: table;
-	height: 100vh;
+	display: none;
+	height: 70vh;
 	width: 100%;
 	position: relative;
 	z-index: 1;
 	overflow-x: hidden; 
 }
-
+/*
 @media screen and (max-width: 767px) and (orientation: landscape) {
     #header.header-wrapper {
 		height: auto;
 		min-height: 100vh;
 		padding: 0px; 
 	} 
-}
+}*/
 
 #header.header-wrapper .header-wrapper-inner {
     display: table-cell;
@@ -198,13 +195,18 @@ box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.12);
 
 #header .slogan{
 	font-size: 8em;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 	line-height: 1em;
 	font-family: 'upheaval', sans-serif;
-	color: white;
-text-shadow: 0px 6px black;
-   -webkit-text-shadow: 0px 6px black;
-    -moz-text-shadow: 0px 6px black;
+	color: #303030;
+}
+
+#texto_portfolio{
+    font-size: 8em;
+	margin-bottom: 0px;
+	line-height: 1em;
+	font-family: 'upheaval', sans-serif;
+    color:#578CE1;
 }
 
 #header .secondary-slogan{
@@ -230,6 +232,7 @@ text-shadow: 0px 6px black;
 #header .bottom a:hover {
     opacity: 1;
 }
+
 
 
 /*////////////////////////////////////////////////////////////////////////
@@ -556,8 +559,32 @@ padding-top:10px;
     }
 }
 
+@media (width: 1024px){
+    .cont{
+        margin-top: -200px;
+    } 
+    #kont video{
+            top: 100px;
+    }
+}
+
+
 @media (max-width: 769px){
+    
+    #kont.cont{
+        display: none;
+    }
+    
+    #header.header-wrapper {
+	display: table;
+}
+    
+    
 	#header .slogan {
+		font-size: 2.8em; 
+	} 
+    
+    #header #texto_portfolio {
 		font-size: 2.8em; 
 	} 
 
@@ -590,6 +617,10 @@ padding-top:10px;
     } 
     #kont video{
         top: 100px;
+    }
+    
+    .center{
+       margin-top: 17%;
     }
     
 }
@@ -634,6 +665,10 @@ padding-top:10px;
     #kont video{
         top: 145px;
     }
+    
+     .center{
+       margin-top: 25%;
+    }
 }
 /*/////////////////////////flecha//////////////////////////////*/
 .arrow {
@@ -647,7 +682,7 @@ padding-top:10px;
 
 /* sets arrow style */
 .arrow path {
-	stroke: white;
+	stroke: #303030;
 	fill: transparent;
 	stroke-width: 3px;	
 	animation: arrow 2s infinite;
@@ -975,7 +1010,7 @@ box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.24);
 
 #kont video {
 position: absolute;
-    top: 0px;
+    top: 5px;
     bottom: 0px;
     right: 0px;
     width: 100%;
