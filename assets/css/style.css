@@ -1127,6 +1127,11 @@ body {
 
 }
 
+#popup-ukelele:target{
+  display: block;
+  z-index: 10000;
+
+}
 .popup__block{
   height: calc(100vh - 40px);
   padding-top: 2%;
@@ -1340,4 +1345,9 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 #close_popup{
   background-image: url(../images/close.svg);
+}
+
+#popup__block_ukelele{
+    padding-top: 0;
+    margin-top: 0;
 }
