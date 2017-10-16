@@ -43,7 +43,7 @@ function main() {
   });
 	
   	// Portfolio isotope filter
-    $(window).load(function() {
+   /* $(window).load(function() {
         var $container = $('.portfolio-items');
         $container.isotope({
             filter: '*',
@@ -74,7 +74,7 @@ function main() {
     $('.portfolio-item a').nivoLightbox({
             effect: 'slideDown',  
             keyboardNav: true,                            
-        });
+        });*/
 
 }());
 
