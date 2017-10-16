@@ -30,7 +30,7 @@
 	     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/animate.css">
- 
+ <link rel="stylesheet" href="assets/css/loaders.css">
 		<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
         
 
@@ -51,9 +51,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
         
   <script type="text/javascript">
-
+$(window).load(function() {
+    $(".loader").fadeOut();
+});
+      
 $(document).ready(function(){
+    
 
+    
+    
+    
   // hide our element on page load
   $('.service').css('opacity', 0);
     $('.image').css('opacity', 0);
@@ -109,7 +116,16 @@ $(document).ready(function(){
 	</head>
 	
 	<body>
-    <div class="background-pop-up"></div>
+<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+        <!-- loader page -->
         <nav id="menu" class="navbar navbar-default navbar-fixed-top">
   <div class="container"> 
     <!-- Brand and toggle get grouped for better mobile display -->
