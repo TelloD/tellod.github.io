@@ -1102,6 +1102,12 @@ body {
 
 }
 
+#popup-distopic:target{
+  display: block;
+  z-index: 10000;
+
+}
+
 .popup__block{
   height: calc(100vh - 40px);
   padding-top: 10%;

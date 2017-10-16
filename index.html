@@ -78,6 +78,12 @@ $(document).ready(function(){
   }, { offset: '50%' });
  
     
+    $(function(){
+    $('.popup__close').click(function(){      
+        $('iframe').attr('src', $('iframe').attr('src'));
+    });
+});
+    
     
     if ($(window).width() <= 768){
           console.log("cambia el link a responsive");
@@ -170,7 +176,7 @@ $(document).ready(function(){
 							<div class="col-sm-4">
 							    <div class="com-preview">
                                     <div class="com-preview-media-container">
-                                        <a class="com-preview-media__image" href="#" style="background-image:url(assets/images/distopic-party.png);">
+                                        <a class="com-preview-media__image" href="#popup-distopic" style="background-image:url(assets/images/distopic-party.png);">
       
                                             <div class="com-preview-media-caption">
                                                 <span class="com-preview-media-caption__subtitle">Distopic party</span>
@@ -410,7 +416,17 @@ $(document).ready(function(){
             </div> <!-- pop up de vecino inesperado -->
             
             
-            
+            <div id="popup-distopic" class="popup">
+                 <div class="popup__block">
+                    <img src="assets/images/vecino-inesperado/titulo.png">
+                    <iframe id="video-vecino"
+                        src="https://www.youtube.com/embed/gazM66fQhfw" id="video-vecino">
+                    </iframe>
+                     <img src="assets/images/vecino-inesperado/sketch1.png">
+                     <img src="assets/images/vecino-inesperado/descripcion.png">  
+                   <a href="#portfolio" class="popup__close">close</a>
+                 </div>
+            </div> <!-- pop up de distopic party -->
             
 		</div><!--/#wrapper-->
 
