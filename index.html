@@ -87,8 +87,9 @@ $(document).ready(function(){
  
     
     $(function(){
-    $('.popup__close').click(function(){      
-        $('iframe').attr('src', $('iframe').attr('src'));
+    $('.popup__close').click(function(){ 
+        //$("#video-distopic").stop();
+       //$('#video-distopic').attr('src', $('iframe').attr('src'));
     });
 });
     
@@ -208,7 +209,7 @@ $(document).ready(function(){
 							<div class="col-sm-4">
 							    <div class="com-preview">
                                     <div class="com-preview-media-container">
-                                        <a class="com-preview-media__image" href="#popup-ukelele" style="background-image:url(assets/images/ukelele.png);">
+                                        <a class="com-preview-media__image" href="#popup-ukelele" style="background-image:url(assets/images/ukelele.jpg);">
       
                                             <div class="com-preview-media-caption">
                                                 <span class="com-preview-media-caption__subtitle">Ukelele</span>
@@ -221,7 +222,7 @@ $(document).ready(function(){
                             <div class="col-sm-4">
 							    <div class="com-preview">
                                     <div class="com-preview-media-container">
-                                        <a class="com-preview-media__image" href="#" style="background-image:url(assets/images/render%20bomb%C3%B3n.png);">
+                                        <a class="com-preview-media__image" href="#" style="background-image:url(assets/images/render-bomb%C3%B3n.jpg);">
       
                                             <div class="com-preview-media-caption">
                                                 <span class="com-preview-media-caption__subtitle">candys</span>
@@ -235,7 +236,7 @@ $(document).ready(function(){
                             <div class="col-sm-4">
 							    <div class="com-preview">
                                     <div class="com-preview-media-container">
-                                        <a class="com-preview-media__image" href="#popup-vecino" style="background-image:url(assets/images/vecino-inesperado.png);">
+                                        <a class="com-preview-media__image" href="#popup-vecino" style="background-image:url(assets/images/vecino-inesperado.jpg);">
       
                                             <div class="com-preview-media-caption">
                                                 <span class="com-preview-media-caption__subtitle">Un vecino inesperado</span>
@@ -249,7 +250,7 @@ $(document).ready(function(){
                              <div class="col-sm-4">
 							    <div class="com-preview">
                                     <div class="com-preview-media-container">
-                                        <a class="com-preview-media__image" href="#popup-vondesktop" style="background-image:url(assets/images/vondes.png);">
+                                        <a class="com-preview-media__image" href="#popup-vondesktop" style="background-image:url(assets/images/vondes.jpg);">
                                                   <div class="com-preview-media-caption">
                                                 <span class="com-preview-media-caption__subtitle">VonDesktop Chapter 2</span>
                                             </div>
@@ -262,7 +263,7 @@ $(document).ready(function(){
                             <div class="col-sm-4">
 							    <div class="com-preview">
                                     <div class="com-preview-media-container">
-                                        <a class="com-preview-media__image" href="#" style="background-image:url(assets/images/imaginacion.png);">
+                                        <a class="com-preview-media__image" href="#" style="background-image:url(assets/images/imaginacion.jpg);">
       
                                             <div class="com-preview-media-caption">
                                                 <span class="com-preview-media-caption__subtitle">imaginación</span>
@@ -276,7 +277,7 @@ $(document).ready(function(){
                           <div class="col-sm-4">
 							    <div class="com-preview">
                                     <div class="com-preview-media-container">
-                                        <a class="com-preview-media__image" href="#" style="background-image:url(assets/images/lluvia-acida.png);">
+                                        <a class="com-preview-media__image" href="#" style="background-image:url(assets/images/lluvia%20acida.png);">
       
                                             <div class="com-preview-media-caption">
                                                 <span class="com-preview-media-caption__subtitle">Lluvia ácida</span>
@@ -399,7 +400,15 @@ $(document).ready(function(){
 				</div>
 			</div><!-- #footer -->
             
-            
+                       <div id="popup-distopic" class="popup">
+                 <div class="popup__block">
+                    <img src="assets/images/distopic-party/distopic%20party.jpg" class="tira">
+                    <iframe  id="video-distopic"  class="videos_portfolio"
+                        src="https://www.youtube.com/embed/-IUS_TJkaJc">
+                    </iframe> 
+                   <a href="#portfolio" class="popup__close">close</a>
+                 </div>
+            </div> <!-- pop up de distopic party --> 
             
 
             <div id="popup-vecino" class="popup">
@@ -415,15 +424,7 @@ $(document).ready(function(){
             </div> <!-- pop up de vecino inesperado -->
             
             
-            <div id="popup-distopic" class="popup">
-                 <div class="popup__block">
-                    <img src="assets/images/distopic-party/distopic%20party.png" class="tira">
-                    <iframe  id="video-distopic"  class="videos_portfolio"
-                        src="https://www.youtube.com/embed/-IUS_TJkaJc">
-                    </iframe> 
-                   <a href="#portfolio" class="popup__close">close</a>
-                 </div>
-            </div> <!-- pop up de distopic party -->
+
             
             <div id="popup-vondesktop" class="popup">
                  <div class="popup__block">
@@ -438,7 +439,7 @@ $(document).ready(function(){
             
                         <div id="popup-ukelele" class="popup">
                  <div class="popup__block" id="popup__block_ukelele">
-                    <img src="assets/images/Ukelele/tira.png" class="tira">
+                    <img src="assets/images/Ukelele/tira.jpg" class="tira">
                    <a href="#portfolio" class="popup__close" id="close_popup">close</a>
                  </div>
             </div> <!-- pop up ukelele -->
@@ -462,6 +463,7 @@ $(document).ready(function(){
         <script type="text/javascript" src="assets/barrajs/bootstrap.js"></script> 
         <script type="text/javascript" src="assets/barrajs/SmoothScroll.js"></script> 
         <script type="text/javascript" src="assets/barrajs/main.js"></script>
+        <script type="text/javascript" src="http://www.youtube.com/player_api" ></script>
         
 	</body>
 </html>
