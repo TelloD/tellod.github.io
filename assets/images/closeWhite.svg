@@ -3,12 +3,13 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
+	.st0{opacity:0.6;}
+	.st1{fill:#FFFFFF;}
 </style>
-<g>
-	<rect x="7.9" y="-2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.1421 10)" class="st0" width="4.2" height="24"/>
+<g class="st0">
+	<rect x="7.9" y="-2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.1422 9.9999)" class="st1" width="4.2" height="24"/>
 </g>
-<g>
-	<rect x="-2" y="7.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.1421 10)" class="st0" width="24" height="4.2"/>
+<g class="st0">
+	<rect x="-2" y="7.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.1422 9.9999)" class="st1" width="24" height="4.2"/>
 </g>
 </svg>
