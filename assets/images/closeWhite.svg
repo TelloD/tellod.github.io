@@ -7,9 +7,6 @@
 	.st1{fill:#FFFFFF;}
 </style>
 <g class="st0">
-	<rect x="7.9" y="-2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.1422 9.9999)" class="st1" width="4.2" height="24"/>
-</g>
-<g class="st0">
-	<rect x="-2" y="7.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.1422 9.9999)" class="st1" width="24" height="4.2"/>
+	<polygon class="st1" points="13,10 20,17 17,20 10,13 3,20 0,17 7,10 0,3 3,0 10,7 17,0 20,3 	"/>
 </g>
 </svg>
