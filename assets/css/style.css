@@ -1051,6 +1051,7 @@ div#content p:last-child {
 /*/////////////////////////////////////////// NUEVO POP-UP////////////////////////////////////////*/
 body {
    overflow-y: hidden;
+   -webkit-overflow-scrolling: touch;
 }
 .popup{
   width: 100%;
