@@ -45,7 +45,7 @@ html {
 	text-rendering: optimizeLegibility;
 	-webkit-text-size-adjust: none;
 	-ms-text-size-adjust: none;
-	
+	overflow-y: hidden;
 }
 
 body {
